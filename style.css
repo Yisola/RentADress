@@ -1,0 +1,370 @@
+ul {
+    float: right;
+}
+
+header {
+    background-color: blanchedalmond;
+}
+
+#ul1 li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#ul1 li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #59276C;
+}
+
+/* To change from button style to text style, 
+   simply comment out the non-commented part, and uncomment the commented part.
+*/
+a.radNow:link, a.radNow:visited {
+    background-color: rgb(166, 77, 201);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* color: rgb(166, 77, 201); */
+  }
+  
+  a.radNow:hover, a.radNow:active {
+    background-color: #59276C;
+    /* color: #59276C; */
+  }
+
+#Logo {
+    width: 13%;
+    margin-left: 50px;
+}
+
+.category {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #A0A0A0;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+
+  justify-items: center;
+  align-items: center;
+    grid-template-columns: auto auto auto;
+    margin: 80px 10px 0px 10px;
+}
+
+.grid-item {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.product {
+    text-align: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 580px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+   */
+  .flip-card-back {
+    background-color: rgb(166, 77, 201);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+  }
+
+  .description{
+      margin: auto;
+  }
+.node {
+    width: 300px;
+    height: 500px;
+}
+
+.footer {
+    clear: both;
+    background-color: #661141;
+    padding: 45px;
+    margin-top: 10%;
+    /* margin-left: auto; */
+}
+
+.footer-grid-container {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+}
+
+.footer-grid-item {
+    width: 75%;
+    color: bisque;
+    border-radius: 15px
+}
+
+.footer-grid-item>ul>li {
+    list-style: none;
+}
+
+.footer-grid-item>ul>li>a {
+    color: bisque;
+    text-decoration: none;
+}
+
+#li {
+    margin-right: 10px;
+}
+
+#ul2 li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: 440027;
+}
+
+#ul2 li {
+    list-style: none;
+    display: block;
+    margin-right: 40px;
+}
+
+p {
+    font-size: larger;
+    color: white
+}
+
+#ul4 {
+    list-style: none;
+}
+
+.contact-form {
+    text-align: center;
+    border: #59276C;
+    width: 30%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 500px;
+    padding: 16px;
+}
+
+.mySlides::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    z-index: -1;
+    display: block;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfebNa0SDh4-r7MjBlCxmhseeMnU39OUtVAhN3GEHk7DmkaiJE');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.slide_image {
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: black;
+    font-size: 20px;
+    padding: 8px;
+    left: 0;
+    right:0;
+    position: absolute;
+    bottom: 25px;
+    width: 30%;
+    border-radius: 150px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(255, 228, 196,0.3);
+    
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
